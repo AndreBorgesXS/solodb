@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "titulo": "Análise de Compatibilidade Solo-Cultura",
+    "data_geracao": "2023-08-15T14:30:45Z",
+    "parametros": {
+      "cultura_id": 1,
+      "cultura_nome": "Soja",
+      "regiao": "Sudeste",
+      "min_adequacao": 3.5
+    }
+  },
+  "resultados": [
+    {
+      "perfil_id": 1,
+      "nome_perfil": "Perfil Latossolo Vermelho",
+      "municipio": "Uberlândia",
+      "estado": "MG",
+      "tipo_solo": "latossolo",
+      "textura": "argilosa",
+      "ph": 5.8,
+      "indice_adequacao": 4.8,
+      "recomendacoes": [
+        "Adubação com potássio recomendada",
+        "Plantio direto favorável",
+        "Rotação com milho benéfica"
+      ]
+    },
+    {
+      "perfil_id": 4,
+      "nome_perfil": "Perfil Latossolo Amarelo",
+      "municipio": "Uberaba",
+      "estado": "MG",
+      "tipo_solo": "latossolo",
+      "textura": "media",
+      "ph": 5.5,
+      "indice_adequacao": 4.2,
+      "recomendacoes": [
+        "Correção de pH recomendada",
+        "Adubação com fósforo necessária",
+        "Manejo de compactação sugerido"
+      ]
+    },
+    {
+      "perfil_id": 7,
+      "nome_perfil": "Perfil Argissolo Vermelho-Amarelo",
+      "municipio": "Campinas",
+      "estado": "SP",
+      "tipo_solo": "argissolo",
+      "textura": "media",
+      "ph": 5.9,
+      "indice_adequacao": 3.9,
+      "recomendacoes": [
+        "Terraceamento recomendado",
+        "Manejo de erosão necessário",
+        "Adubação parcelada sugerida"
+      ]
+    }
+  ],
+  "estatisticas": {
+    "total_perfis_analisados": 45,
+    "perfis_compativeis": 28,
+    "media_adequacao": 3.8,
+    "distribuicao_adequacao": [
+      {"faixa": "4.5-5.0", "quantidade": 8, "percentual": 17.8},
+      {"faixa": "4.0-4.4", "quantidade": 12, "percentual": 26.7},
+      {"faixa": "3.5-3.9", "quantidade": 8, "percentual": 17.8},
+      {"faixa": "3.0-3.4", "quantidade": 10, "percentual": 22.2},
+      {"faixa": "<3.0", "quantidade": 7, "percentual": 15.5}
+    ]
+  }
+},
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.2771, -18.9113]
+      },
+      "properties": {
+        "id": 1,
+        "nome": "Perfil Latossolo Vermelho",
+        "tipo_solo": "latossolo",
+        "textura": "argilosa",
+        "ph": 5.8,
+        "materia_organica": 3.2,
+        "municipio": "Uberlândia",
+        "estado": "MG",
+        "culturas_recomendadas": ["Soja", "Milho", "Algodão"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.9321, -19.7472]
+      },
+      "properties": {
+        "id": 4,
+        "nome": "Perfil Latossolo Amarelo",
+        "tipo_solo": "latossolo",
+        "textura": "media",
+        "ph": 5.5,
+        "materia_organica": 2.8,
+        "municipio": "Uberaba",
+        "estado": "MG",
+        "culturas_recomendadas": ["Soja", "Milho", "Sorgo"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.0609, -22.9064]
+      },
+      "properties": {
+        "id": 7,
+        "nome": "Perfil Argissolo Vermelho-Amarelo",
+        "tipo_solo": "argissolo",
+        "textura": "media",
+        "ph": 5.9,
+        "materia_organica": 2.5,
+        "municipio": "Campinas",
+        "estado": "SP",
+        "culturas_recomendadas": ["Soja", "Milho", "Café"]
+      }
+    }
+  ],
+  "metadata": {
+    "data_exportacao": "2023-08-15T14:30:45Z",
+    "sistema_coordenadas": "EPSG:4326",
+    "filtros_aplicados": {
+      "regiao": "Sudeste",
+      "culturas": ["Soja"]
+    },
+    "total_registros": 3
+  }
+},
+{
+  "relatorio": {
+    "titulo": "Relatório de Análise de Solo",
+    "perfil_id": 1,
+    "nome_perfil": "Perfil Latossolo Vermelho",
+    "data_analise": "2023-05-18",
+    "laboratorio": "Laboratório de Solos - Embrapa",
+    "responsavel_tecnico": "Dr. Carlos Mendes",
+    "numero_registro": "CREA-123456"
+  },
+  "propriedades_fisicas": {
+    "textura": {
+      "areia": 25.3,
+      "silte": 18.7,
+      "argila": 56.0,
+      "classificacao": "argilosa"
+    },
+    "densidade": {
+      "densidade_solo": 1.2,
+      "densidade_particulas": 2.65,
+      "porosidade_total": 54.7
+    },
+    "estrutura": "Granular",
+    "consistencia": {
+      "seco": "Dura",
+      "umido": "Firme",
+      "molhado": "Plástica e Pegajosa"
+    }
+  },
+  "propriedades_quimicas": {
+    "ph": {
+      "agua": 5.8,
+      "kcl": 5.2,
+      "cacl2": 5.4
+    },
+    "materia_organica": 3.2,
+    "carbono_organico": 1.86,
+    "macronutrientes": {
+      "fosforo": 12.5,
+      "potassio": 120.0,
+      "calcio": 2.8,
+      "magnesio": 1.2,
+      "enxofre": 8.5
+    },
+    "micronutrientes": {
+      "boro": 0.45,
+      "cobre": 1.8,
+      "ferro": 45.0,
+      "manganes": 28.0,
+      "zinco": 2.2
+    },
+    "acidez": {
+      "h_al": 3.8,
+      "aluminio": 0.2
+    },
+    "ctc": 8.0,
+    "saturacao_bases": 51.2,
+    "saturacao_aluminio": 2.5
+  },
+  "interpretacao": {
+    "fertilidade": "Média a Alta",
+    "limitacoes": ["Leve acidez", "Teor médio de fósforo"],
+    "potencial_agricola": "Alto",
+    "recomendacoes": [
+      "Calagem leve: 1,2 ton/ha",
+      "Adubação fosfatada: 80 kg/ha de P2O5",
+      "Adubação potássica: 60 kg/ha de K2O"
+    ]
+  },
+  "metadados_exportacao": {
+    "formato": "json",
+    "data_exportacao": "2023-08-15T14:30:45Z",
+    "usuario": "joao.silva@exemplo.com",
+    "versao_api": "1.0.3"
+  }
+}
