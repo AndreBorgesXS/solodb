@@ -1,53 +1,33 @@
-
-## Perfil de Solo
-
-```json
 {
-  "id": 1,
-  "nome": "Perfil Latossolo Vermelho",
-  "classificacao": "Latossolo Vermelho Distrófico típico",
-  "tipo_solo": "latossolo",
-  "textura": "argilosa",
-  "cor": "Vermelho escuro",
-  "estrutura": "Granular",
-  "drenagem": "boa",
-  "ph": 5.8,
-  "materia_organica": 3.2,
-  "descricao": "Perfil de solo profundo com boa drenagem, típico de áreas de cerrado.",
-  "localizacao": {
-    "municipio": "Uberlândia",
-    "estado": "MG",
-    "coordenadas": {
-      "type": "Point",
-      "coordinates": [-48.2771, -18.9113]
-    },
-    "altitude": 863.25
-  },
-  "metadados": {
-    "responsavel": "Dr. João Silva",
-    "instituicao": "Embrapa Solos",
-    "data_coleta": "2023-05-15",
-    "data_cadastro": "2023-05-20T14:30:45Z",
-    "usuario_id": 5
-  }
-}
-```
-
-## Lista de Perfis de Solo (Paginada)
-
-```json
-{
-  "count": 120,
-  "next": "https://api.solobrasil.com.br/api/v1/perfis/?page=2",
-  "previous": null,
-  "results": [
+  "perfis": [
     {
       "id": 1,
       "nome": "Perfil Latossolo Vermelho",
+      "classificacao": "Latossolo Vermelho Distrófico típico",
       "tipo_solo": "latossolo",
-      "municipio": "Uberlândia",
-      "estado": "MG",
-      "data_coleta": "2023-05-15"
+      "textura": "argilosa",
+      "cor": "Vermelho escuro",
+      "estrutura": "Granular",
+      "drenagem": "boa",
+      "ph": 5.8,
+      "materia_organica": 3.2,
+      "descricao": "Perfil de solo profundo com boa drenagem, típico de áreas de cerrado.",
+      "localizacao": {
+        "municipio": "Uberlândia",
+        "estado": "MG",
+        "coordenadas": {
+          "type": "Point",
+          "coordinates": [-48.2771, -18.9113]
+        },
+        "altitude": 863.25
+      },
+      "metadados": {
+        "responsavel": "Dr. João Silva",
+        "instituicao": "Embrapa Solos",
+        "data_coleta": "2023-05-15",
+        "data_cadastro": "2023-05-20T14:30:45Z",
+        "usuario_id": 5
+      }
     },
     {
       "id": 2,
@@ -65,69 +45,47 @@
       "estado": "PE",
       "data_coleta": "2023-06-10"
     }
-  ]
-}
-```
-
-## Cultura Agrícola
-
-```json
-{
-  "id": 1,
-  "nome": "Soja",
-  "nome_cientifico": "Glycine max",
-  "descricao": "Leguminosa de grande importância econômica, utilizada para produção de grãos, óleo e ração animal.",
-  "ciclo": "medio",
-  "ph_minimo": 5.5,
-  "ph_maximo": 7.0,
-  "temperatura_minima": 20.0,
-  "temperatura_maxima": 30.0,
-  "precipitacao_anual_minima": 450,
-  "precipitacao_anual_maxima": 800,
-  "imagem_url": "https://api.solobrasil.com.br/media/culturas/soja.jpg",
-  "data_cadastro": "2023-01-10T09:15:30Z",
-  "usuario_id": 1,
-  "recomendacoes_solo": [
-    {
-      "tipo_solo": "latossolo",
-      "adequacao": 5,
-      "observacoes": "Altamente recomendado para latossolos bem drenados."
-    },
-    {
-      "tipo_solo": "argissolo",
-      "adequacao": 4,
-      "observacoes": "Bom desempenho em argissolos com manejo adequado."
-    }
   ],
-  "recomendacoes_textura": [
-    {
-      "textura": "argilosa",
-      "adequacao": 5,
-      "observacoes": "Excelente para solos argilosos com boa drenagem."
-    },
-    {
-      "textura": "media",
-      "adequacao": 4,
-      "observacoes": "Bom desempenho em solos de textura média."
-    }
-  ]
-}
-```
-
-## Lista de Culturas (Paginada)
-
-```json
-{
-  "count": 45,
-  "next": "https://api.solobrasil.com.br/api/v1/culturas/?page=2",
-  "previous": null,
-  "results": [
+  "culturas": [
     {
       "id": 1,
       "nome": "Soja",
+      "nome_cientifico": "Glycine max",
+      "descricao": "Leguminosa de grande importância econômica, utilizada para produção de grãos, óleo e ração animal.",
       "ciclo": "medio",
       "ph_minimo": 5.5,
-      "ph_maximo": 7.0
+      "ph_maximo": 7.0,
+      "temperatura_minima": 20.0,
+      "temperatura_maxima": 30.0,
+      "precipitacao_anual_minima": 450,
+      "precipitacao_anual_maxima": 800,
+      "imagem_url": "https://api.solobrasil.com.br/media/culturas/soja.jpg",
+      "data_cadastro": "2023-01-10T09:15:30Z",
+      "usuario_id": 1,
+      "recomendacoes_solo": [
+        {
+          "tipo_solo": "latossolo",
+          "adequacao": 5,
+          "observacoes": "Altamente recomendado para latossolos bem drenados."
+        },
+        {
+          "tipo_solo": "argissolo",
+          "adequacao": 4,
+          "observacoes": "Bom desempenho em argissolos com manejo adequado."
+        }
+      ],
+      "recomendacoes_textura": [
+        {
+          "textura": "argilosa",
+          "adequacao": 5,
+          "observacoes": "Excelente para solos argilosos com boa drenagem."
+        },
+        {
+          "textura": "media",
+          "adequacao": 4,
+          "observacoes": "Bom desempenho em solos de textura média."
+        }
+      ]
     },
     {
       "id": 2,
@@ -143,180 +101,73 @@
       "ph_minimo": 5.5,
       "ph_maximo": 6.5
     }
-  ]
-}
-```
-
-## Recomendação Agrícola
-
-```json
-{
-  "id": 1,
-  "perfil_solo": {
-    "id": 1,
-    "nome": "Perfil Latossolo Vermelho",
-    "tipo_solo": "latossolo",
-    "municipio": "Uberlândia",
-    "estado": "MG"
-  },
-  "cultura": {
-    "id": 1,
-    "nome": "Soja",
-    "ciclo": "medio"
-  },
-  "indice_adequacao": 4.8,
-  "observacoes": "Excelente compatibilidade entre o perfil de solo e a cultura. Recomenda-se adubação com potássio para otimizar a produção.",
-  "data_recomendacao": "2023-07-12T10:45:22Z",
-  "usuario_id": 3
-}
-```
-
-## Lista de Recomendações Agrícolas por Perfil de Solo
-
-```json
-{
-  "perfil_solo": {
-    "id": 1,
-    "nome": "Perfil Latossolo Vermelho",
-    "tipo_solo": "latossolo",
-    "municipio": "Uberlândia",
-    "estado": "MG"
-  },
+  ],
   "recomendacoes": [
     {
       "id": 1,
-      "cultura": {
-        "id": 1,
-        "nome": "Soja",
-        "ciclo": "medio"
-      },
+      "perfil_solo_id": 1,
+      "cultura_id": 1,
       "indice_adequacao": 4.8,
-      "observacoes": "Excelente compatibilidade"
+      "observacoes": "Excelente compatibilidade entre o perfil de solo e a cultura. Recomenda-se adubação com potássio para otimizar a produção.",
+      "data_recomendacao": "2023-07-12T10:45:22Z",
+      "usuario_id": 3
     },
     {
       "id": 5,
-      "cultura": {
-        "id": 2,
-        "nome": "Milho",
-        "ciclo": "medio"
-      },
+      "perfil_solo_id": 1,
+      "cultura_id": 2,
       "indice_adequacao": 4.5,
-      "observacoes": "Muito boa compatibilidade"
+      "observacoes": "Muito boa compatibilidade",
+      "data_recomendacao": "2023-07-15T11:30:00Z",
+      "usuario_id": 3
     },
     {
       "id": 12,
-      "cultura": {
-        "id": 8,
-        "nome": "Algodão",
-        "ciclo": "medio"
-      },
+      "perfil_solo_id": 1,
+      "cultura_id": 8,
       "indice_adequacao": 3.9,
-      "observacoes": "Boa compatibilidade com manejo adequado"
+      "observacoes": "Boa compatibilidade com manejo adequado",
+      "data_recomendacao": "2023-07-18T09:15:30Z",
+      "usuario_id": 3
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 3,
+      "username": "joao.silva",
+      "email": "joao.silva@exemplo.com",
+      "first_name": "João",
+      "last_name": "Silva",
+      "instituicao": "Embrapa Solos",
+      "cargo": "Pesquisador",
+      "data_cadastro": "2022-11-05T08:30:15Z",
+      "ultimo_acesso": "2023-08-10T14:22:45Z",
+      "is_active": true,
+      "is_staff": false
+    }
+  ],
+  "estatisticas_regiao": [
+    {
+      "id": 1,
+      "regiao": "Sudeste",
+      "total_perfis": 523,
+      "distribuicao_por_estado": [
+        {"estado": "MG", "total": 215},
+        {"estado": "SP", "total": 187},
+        {"estado": "RJ", "total": 68},
+        {"estado": "ES", "total": 53}
+      ],
+      "distribuicao_por_tipo_solo": [
+        {"tipo": "latossolo", "total": 245, "percentual": 46.8},
+        {"tipo": "argissolo", "total": 128, "percentual": 24.5},
+        {"tipo": "cambissolo", "total": 87, "percentual": 16.6},
+        {"tipo": "neossolo", "total": 45, "percentual": 8.6},
+        {"tipo": "gleissolo", "total": 12, "percentual": 2.3},
+        {"tipo": "outros", "total": 6, "percentual": 1.2}
+      ],
+      "media_ph": 5.9,
+      "media_materia_organica": 2.8,
+      "data_atualizacao": "2023-08-01T00:00:00Z"
     }
   ]
 }
-```
-
-## Autenticação - Obtenção de Token
-
-### Requisição
-
-```json
-{
-  "username": "usuario@exemplo.com",
-  "password": "senha_segura"
-}
-```
-
-### Resposta
-
-```json
-{
-  "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2OTM0MjM0NTZ9.exemplo_token",
-  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2OTQwMjgyNTZ9.exemplo_refresh_token",
-  "user": {
-    "id": 3,
-    "username": "usuario@exemplo.com",
-    "name": "João Silva",
-    "is_staff": false
-  }
-}
-```
-
-## Usuário
-
-```json
-{
-  "id": 3,
-  "username": "joao.silva",
-  "email": "joao.silva@exemplo.com",
-  "first_name": "João",
-  "last_name": "Silva",
-  "instituicao": "Embrapa Solos",
-  "cargo": "Pesquisador",
-  "data_cadastro": "2022-11-05T08:30:15Z",
-  "ultimo_acesso": "2023-08-10T14:22:45Z",
-  "is_active": true,
-  "is_staff": false
-}
-```
-
-## Exportação de Dados - Configuração
-
-```json
-{
-  "formato": "csv",
-  "filtros": {
-    "tipo_solo": ["latossolo", "argissolo"],
-    "estado": "MG",
-    "data_coleta_inicio": "2023-01-01",
-    "data_coleta_fim": "2023-07-31"
-  },
-  "campos": ["id", "nome", "tipo_solo", "textura", "ph", "materia_organica", "municipio", "estado", "coordenadas", "data_coleta"],
-  "ordenacao": "data_coleta",
-  "incluir_cabecalho": true,
-  "delimitador": ";",
-  "email_notificacao": "usuario@exemplo.com"
-}
-```
-
-## Erro da API
-
-```json
-{
-  "status": "error",
-  "codigo": 400,
-  "mensagem": "Parâmetros inválidos na requisição",
-  "detalhes": {
-    "tipo_solo": ["Valor 'arenoso' não é uma opção válida. Escolha entre: latossolo, argissolo, neossolo, cambissolo, gleissolo, outros."],
-    "ph": ["Certifique-se de que este valor seja menor ou igual a 14."]
-  },
-  "timestamp": "2023-08-15T10:23:45Z"
-}
-```
-
-## Estatísticas de Perfis de Solo por Região
-
-```json
-{
-  "regiao": "Sudeste",
-  "total_perfis": 523,
-  "distribuicao_por_estado": [
-    {"estado": "MG", "total": 215},
-    {"estado": "SP", "total": 187},
-    {"estado": "RJ", "total": 68},
-    {"estado": "ES", "total": 53}
-  ],
-  "distribuicao_por_tipo_solo": [
-    {"tipo": "latossolo", "total": 245, "percentual": 46.8},
-    {"tipo": "argissolo", "total": 128, "percentual": 24.5},
-    {"tipo": "cambissolo", "total": 87, "percentual": 16.6},
-    {"tipo": "neossolo", "total": 45, "percentual": 8.6},
-    {"tipo": "gleissolo", "total": 12, "percentual": 2.3},
-    {"tipo": "outros", "total": 6, "percentual": 1.2}
-  ],
-  "media_ph": 5.9,
-  "media_materia_organica": 2.8,
-  "data_atualizacao": "2023-08-01T00:00:00Z"
-}
-```
